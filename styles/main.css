@@ -1,12 +1,25 @@
+*{box-sizing: border-box;
+margin:0;
+padding:0;
+}
 
-h1
-{color: black;
-    font-family: 'IBM Plex Mono', monospace;
-    
+body{}
 
+h2{margin:20px;
+padding:0;
+text-align: center;
 
-    
 
 }
 
-p {font-family: ;}
+h1{margin-top:20%;
+    padding:0;
+    font-size: 50px;
+    text-align: center;}
+
+p{text-align: center;
+margin-top:20px;}
+
+nav{ text-align: center;
+margin-top:20px}
+ul{list-style-type: none;}
