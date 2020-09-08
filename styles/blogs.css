@@ -7,18 +7,34 @@
 .example-image{
     display: inline-block;
     width:50%;
-    height:50%;}
+    height:50%;
+margin-top: 2%;
+margin-bottom:2%;
+text-align: center;}
 
-body{
-    text-align: center;
+.homepage{font-family: 'Caveat', cursive;
+position: fixed;
+font-size: 25px;
+top:5px;
+left:5px}
+
+.image{text-align: center;}
+
+a:link {
+    text-decoration: none;
+color:black;}
+a:hover{
+    font-size: 120%
 }
 
 h1, h2{
-    font-family: 'Caveat', cursive;}
+    font-family: 'Caveat', cursive;
+text-align: center;}
   
     p{font-size:15px; 
     width:50%;
     margin:0 auto;
+    text-align: center;
 
 }
 
