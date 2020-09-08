@@ -1,0 +1,24 @@
+
+
+
+
+
+
+.example-image{
+    display: inline-block;
+    width:50%;
+    height:50%;}
+
+body{
+    text-align: center;
+}
+
+h1, h2{
+    font-family: 'Caveat', cursive;}
+  
+    p{font-size:15px; 
+    width:50%;
+    margin:0 auto;
+
+}
+

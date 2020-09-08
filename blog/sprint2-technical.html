@@ -5,7 +5,7 @@
       <title>Olivia's Blog </title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
+      <link href="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/styles/blogs.css" rel="stylesheet" type="text/css" />
       <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     </head>
     
@@ -18,21 +18,20 @@
       <div class="relative">
         <h2>Relative postioning</h2>
         <p>Firstly here are some boxes I made in HTML which I will use to show how the different position values in CSS affect
-           elements on a webpage. 
-          <div class="no-position"><img src="img_girl.jpg" alt="no-position-boxes"></div>
-
-        </p>
+           elements on a webpage. </p>
+          <div><img class="example-image" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/Images /no-position.png" alt="no-position-boxes"></div>
+      
       <p>
         Relative postioning is where an element (e.g. text or an image) is positioned relative to where its defult postion is (or where it would normally
         be postioned). If you changed the positioning with top, right, bottom, left, the element 
         will move away from this defult position. When the element is moved, the position of other elements on the page
-        are not affected. Take a look at what happens to the yellow box when I use position:relative and move it 5px from the left
-        and 5px from the top. 
-        <div class="relative02"><img src="img_girl.jpg" alt="no-position"></div>
-        It moves the yellow box 5px from the top and 5px from the left from where it was originally, and the other boxes (elements) are not affected. 
+        are not affected. Take a look at what happens to the yellow box when I use position:relative and move it 20px from the left
+        and 20px from the top. </p>
+
+        <div><img class="example-image" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/Images /relative01.png" alt="relative-position"></div>
+        <p>
+        It moves the yellow box 20px from the top and 20px from the left from where it was originally, and the other boxes (elements) are not affected. 
         They just stay in the same spot as if the yellow box never moved. 
-
-
       </p>
       </div>
 
@@ -44,8 +43,10 @@
           element was not there and take up the leftover space. You can use top, right, bottom and left to position
           the element. This will move the element relative to the box that it is in. If it is not in a parent box, then 
           this will just move the element relative to the body of the page. Let's take a look at an example of this. Here
-          I moved the yellow box 5px from the top and 5px from the left, but this time using position:absolute;
-          <div class="absolute02"><img src="img_girl.jpg" alt="no-position"></div>
+          I moved the yellow box 20px from the top and 20px from the left, but this time using position:absolute;
+          </p>
+          <div><img class= "example-image" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/Images /absolute01.png" alt="absolute-positioning01"></div>
+          <p>
           As mentioned above the box moves 5px from the top and 5px from the left but rather than from the position it was
           originally in, it moves relative to the whole page!.  This is because the box in not inside another specified element, so it
           will just move relative to the HTML document itself. You can also see that the box has been removed from the flow
@@ -53,22 +54,24 @@
           Say, for example the smaller boxes where inside a bigger box and that was set to 
           position:relative and the yellow box position:absolute, then if I moved the yellow box, it would move relative to the larger box. 
           Here I have made a big white box to show this concept. 
-          <div class="absolute03"><img src="img_girl.jpg" alt="no-position"></div>
-
-          You can see that the yellow box moved 5px from the top and 5px from the left but relative to the big white box, not 
+          </p>
+          <div><img class="example-image" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/Images /absolute02.png" alt="absolute-positioning02"></div>
+          <p>
+          You can see that the yellow box moved 20px from the top and 20px from the left but relative to the big white box, not 
           the whole page!. 
-
         </p>
       </div>
 
       <div class="flixed">
         <h2>Fixed positioning</h2>
         <p>
-          When an element on a webpage has a position value of "fixed", it means that position that
-          element is in is indeed "fixed". The element will not move from that position, even if the user
-          scrolls. It will alway stay in the same position on the screen. This position is often used for a 
-          button that would take you back to the top of the page. The button moves with you as you scroll so you
-          can click on it to take you back to the top. 
+          When an element on a webpage has a position value of "fixed", it means that the position that
+          element is in, is indeed "fixed", to the viewpoint that is. The element will not move from that position, even if the user
+          scrolls. It will alway stay in the same position on the screen. Like with absolute positioning, if the box is in position:fixed, 
+          it will be removed from flow of the document and the other boxes will move to take up the space it left behind (as you can see in the example below).
+          <div> 
+            <img class="example-image" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/Images /Fixed01.png" alt="fixedpositioning02"></div>
+          </div>
 
         </p>
       </div>
