@@ -5,14 +5,73 @@
       <title>Olivia's Blog </title>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="styles/main.css" rel="stylesheet" type="text/css" />
+      <link href="styles/blogs.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     </head>
     
     <body>
-      <h1>Olivia Gambitsis</h1>
+
+      <h1>Sprint-2 Technical Blog</h1>
     
-      <h2>Welcome to my blog for Foundations</h2>
-      
+      <h2>What are the differences between relative, absolute, and fixed positioning?</h2>
+
+      <div class="relative">
+        <h2>Relative postioning</h2>
+        <p>Firstly here are some boxes I made in HTML which I will use to show how the different position values in CSS affect
+           elements on a webpage. 
+          <div class="no-position"><img src="img_girl.jpg" alt="no-position-boxes"></div>
+
+        </p>
+      <p>
+        Relative postioning is where an element (e.g. text or an image) is positioned relative to where its defult postion is (or where it would normally
+        be postioned). If you changed the positioning with top, right, bottom, left, the element 
+        will move away from this defult position. When the element is moved, the position of other elements on the page
+        are not affected. Take a look at what happens to the yellow box when I use position:relative and move it 5px from the left
+        and 5px from the top. 
+        <div class="relative02"><img src="img_girl.jpg" alt="no-position"></div>
+        It moves the yellow box 5px from the top and 5px from the left from where it was originally, and the other boxes (elements) are not affected. 
+        They just stay in the same spot as if the yellow box never moved. 
+
+
+      </p>
+      </div>
+
+      <div class="absolute">
+        <h2>Absolute positioning</h2>
+        <p>
+          When an element has a position value of "absolute" it is no longer part of the document flow, if it is moved
+          there will be no space left where the element was. The layout of other elements will act as if the 
+          element was not there and take up the leftover space. You can use top, right, bottom and left to position
+          the element. This will move the element relative to the box that it is in. If it is not in a parent box, then 
+          this will just move the element relative to the body of the page. Let's take a look at an example of this. Here
+          I moved the yellow box 5px from the top and 5px from the left, but this time using position:absolute;
+          <div class="absolute02"><img src="img_girl.jpg" alt="no-position"></div>
+          As mentioned above the box moves 5px from the top and 5px from the left but rather than from the position it was
+          originally in, it moves relative to the whole page!.  This is because the box in not inside another specified element, so it
+          will just move relative to the HTML document itself. You can also see that the box has been removed from the flow
+          of the document! as if it doesnt exist the other boxes move to fill the space it once occupied. 
+          Say, for example the smaller boxes where inside a bigger box and that was set to 
+          position:relative and the yellow box position:absolute, then if I moved the yellow box, it would move relative to the larger box. 
+          Here I have made a big white box to show this concept. 
+          <div class="absolute03"><img src="img_girl.jpg" alt="no-position"></div>
+
+          You can see that the yellow box moved 5px from the top and 5px from the left but relative to the big white box, not 
+          the whole page!. 
+
+        </p>
+      </div>
+
+      <div class="flixed">
+        <h2>Fixed positioning</h2>
+        <p>
+          When an element on a webpage has a position value of "fixed", it means that position that
+          element is in is indeed "fixed". The element will not move from that position, even if the user
+          scrolls. It will alway stay in the same position on the screen. This position is often used for a 
+          button that would take you back to the top of the page. The button moves with you as you scroll so you
+          can click on it to take you back to the top. 
+
+        </p>
+      </div>
     
     </body>
   </html>
