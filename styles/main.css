@@ -24,8 +24,10 @@ ul{list-style-type: none;
     margin-top: 0;
     font-size: 30px;
     color: black;
+    display:inline-block;}
 
-}
+    .core{margin-left: 15%;}
+
 
 a:link {
     text-decoration: none;
@@ -35,5 +37,4 @@ a:visited { color: gray;
 }
 
 a:hover {font-size:120%;}
-
-    
+=
