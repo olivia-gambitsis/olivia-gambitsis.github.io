@@ -5,12 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://olivia-gambitsis.github.io/styles/blogs.css" rel="stylesheet" type="text/css" />
+        <link href="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/styles/blogs.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
         <title>OG Technical-3</title>
     </head>
 
     <body>
+        <nav class="homepage">
+            <a href="https://olivia-gambitsis.github.io/index.html">Click here to go home!</a>
+            </nav>
         <h1>Sprint-3 Technical Blog</h1>
         <h1>JavaScript And The DOM</h1>
 
@@ -19,13 +22,14 @@
        <p>A boat can be used to describe HTML and CSS. A boat is made of of many parts which form the boat's frame to this is what allows
             the boat to float and gives the boat its structure/shape this is HTML. To make the boat look cool, you add nice interiors, paint etc, this is CSS. 
        If you want to drive the boat then you need JavaScript.</p>
+       <div class="image"><img class="brain" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/images/boat.png" alt="boat"></div>
 
 
         <h2>Control flow and Loops.</h2>
         <p>
             Flow is a term used to describe the order in which the browser executes your code. This is important because you may want something to 
-            happen based on a condition that came before it. This is where control comes in, you can control the flow of the code using different statements. Think of the code 
-            as a recipie for a lasangna. You do not want to just take all of the items in the recipie and put them into the oven. You want to 
+            happen based on a condition that came before it. This is where control comes in, you can control the flow of the code using different statements such
+            as if...else satements. Think of the code as a recipie for a lasangna. You do not want to just take all of the items in the recipie and put them into the oven. You want to 
             carry out the recipie in steps, like in a method, the steps in the method is the flow. You might be making lasangna for a lot of people and need more than one. 
             This is where loops come in, you can loop over the recipie again and again and keep assembling lasangnas, until you have enough. 
         </p>
@@ -34,26 +38,29 @@
            <p>
           When an HTML document is loaded in the browser a new representation of the document is formed called the
            The DOM (Document Object Model). The DOM is a representation of an HTML document as a collection of objects which are called nodes. These objects are organised into
-            a heirachial tree-like structure in the browser. The objects represented are the elements within an the document, such as the body and html elements, the corrosponding div 
-            tags and title tags, text and so on. This object model makes it easy for JavaScript understand, then in turn we can use JavaScript to manipulate the objects in the DOM. You can 
-            access the DOM tree using DevTools. The DOM is just a different representation of the same document, it is not a different document. I found
+            a heirachial tree-like structure in the browser. The objects represented are the elements within a document, such as the body and html elements, the corrosponding div 
+            tags and title tags, text and so on. This object model makes it easy for JavaScript to understand, then in turn we can use JavaScript to manipulate the objects in the DOM. You can 
+            access the DOM tree using DevTools. The DOM is just a different representation of the same document, it is not a different document.
             </p>
 
            <h2>Explain the difference between accessing data from arrays and objects.</h2>
+           <h3>Arrays</h3>
            <p>
            An array is essentially a list of items that you use in your code. You can use an array to store
            multiple values in a variable. Arrays are numbered starting at 0, rather than 1. Arrays are written as a list of values between 
-           square brackets. You can access a value in an array using square brackets and the position of the value you want to access. 
-
+           square brackets. You can access a value in an array using square brackets and the position of the value you want to access. </p>
+           <h3>Objects</h3>
+           <p>
            Objects are very similar to Arrays, Objects have a key and a value assigned to the key. For example you could have a person, 
            a key could be 'age' and the value could be a number e.g 20. You can access objects through dot notation or brackets. I could access 
-           the age value by using person.age = 20 or bracket notation person['age'] = 20. 
-
+           the age value by using person.age = 20 or bracket notation person['age'] = 20. Heres an example of when you would use square brackets vs
+           dot notation. 
            </p>
-
+           <div class="image"><img class="objects" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/images/dot-notation.png" alt="dot-notation"></div>
+           <div class="image"><img class="objects" src="/Users/oliviagambitsis/dev-academy/foundations/olivia-gambitsis.github.io/images/bracket-notation.png" alt="bracket-notation"></div>
         <h2>Explain what functions are and why they are useful.</h2>
         <p>
-            A funtion is used to wrap a bunch of code that will in turn carry out a specific action. You can thing of a function
+            A funtion is used to wrap a bunch of code that will in turn carry out a specific action. You can think of a function
             as a way of storing a line of code that you might want to call upon later on. Functions are useful for breaking the 
             code into steps and allows us to reuse a section of code over and over again insted of rewriting it. 
 
